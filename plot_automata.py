@@ -174,7 +174,8 @@ def read_and_convert_info(input_file_name, output_file_name, plot_title, alfabet
 
 def main():
     alfabet_labels = calculate_alfabet_labels()
-    data = [("dfa_out.txt", "dfa_draw.pdf", "DFA", "true"), ("lambda_nfa_out.txt", "lambda_nfa_draw.pdf", "Lambda NFA", "false")]
+    data = [("output/dfa_out.txt", "output/dfa_draw.pdf", "DFA", "true"),
+            ("output/lambda_nfa_out.txt", "output/lambda_nfa_draw.pdf", "Lambda NFA", "false")]
     for (input_file_name, output_file_name, plot_title, draw_dfa) in data:
         read_and_convert_info(input_file_name, output_file_name, plot_title, alfabet_labels, draw_dfa)
 

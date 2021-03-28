@@ -1119,7 +1119,7 @@ int main(){
      *  expresia
      * */
 
-    string numeFisier = "date.txt";
+    string numeFisier = "input/date.txt";
 
     ifstream fin;
     fin.open(numeFisier);
@@ -1160,9 +1160,9 @@ int main(){
 
     AutomatDFA *automatDfa = conversieLaDFA(automatLambdaNfa);
 
-    afisareAutomat((StructuraAutomat*&)automatLambdaNfa,false,"lambda_nfa_out.txt");
+    afisareAutomat((StructuraAutomat*&)automatLambdaNfa,false,"output/lambda_nfa_out.txt");
 
-    afisareAutomat((StructuraAutomat*&)automatDfa,true,"dfa_out.txt");
+    afisareAutomat((StructuraAutomat*&)automatDfa,true,"output/dfa_out.txt");
 
     ruleaza_scriptul_python_pentru_desen();
 
